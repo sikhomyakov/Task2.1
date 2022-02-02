@@ -8,5 +8,3 @@ fun main() {
     val result = if (discount <= minDiscount) minDiscount else discount
     println("Ваша комиссия составляет: ${result.toInt() / 100} рублей ${result.toInt() % 100} копеек")
 }
-
-
