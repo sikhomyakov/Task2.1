@@ -1,10 +1,13 @@
 package ru.netology
 
 fun main() {
-    val amount = 12165_00
-    val minDiscount = 35_00
+    val amount = 121
+    val minDiscount = 35
+    val pennies = 100
 
-    val discount = amount * 0.0075
-    val result = if (discount <= minDiscount) minDiscount else discount
-    println("Ваша комиссия составляет: ${result.toInt() / 100} рублей ${result.toInt() % 100} копеек")
+    val fullAmount = amount * pennies
+    val fullMinDiscount = minDiscount * pennies
+    val discount = fullAmount * 0.0075
+    val fullDiscount = if (discount <= fullMinDiscount) fullMinDiscount  else discount
+    println("Ваша комиссия составляет: ${fullDiscount.toInt() / 100} рублей ${fullDiscount.toInt() % 100} копеек")
 }
