@@ -1,7 +1,8 @@
 package ru.netology
 
+
 fun main() {
-    val amount = 4800
+    val amount = 6500
     val minDiscount = 35
     val pennies = 100
 
